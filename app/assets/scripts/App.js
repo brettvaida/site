@@ -1,0 +1,1 @@
+CurrentYear = require('./modules/CurrentYear');

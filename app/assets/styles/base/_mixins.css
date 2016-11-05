@@ -1,0 +1,34 @@
+/*
+Note: The best way to structure the use of media query mixins is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code in ../modules/_buttons.css and style it
+there.
+*/
+
+/* Larger than phone (also point when grid becomes active) */
+@define-mixin atSmall {
+  @media (min-width: 550px) {
+    @mixin-content;
+  }
+}
+
+/* Larger than tablet */
+@define-mixin atMedium {
+  @media (min-width: 750px) {
+    @mixin-content;
+  }
+}
+
+/* Larger than desktop */
+@define-mixin atLarge {
+  @media (min-width: 1000px) {
+    @mixin-content;
+  }
+}
+
+/* Larger than Desktop HD */
+@define-mixin atXLarge {
+  @media (min-width: 1200px) {
+    @mixin-content;
+  }
+}
