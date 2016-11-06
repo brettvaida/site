@@ -37,7 +37,7 @@ body {
   font-size: 1.5em; /* body must use em */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
   background-color: #fff;
 }
@@ -1242,10 +1242,9 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
-/* Larger than mobile = xs */
-@media (min-width: 400px) {}
+/* Base = xs */
 
-/* Larger than phablet (also point when grid becomes active) = sm */
+/* Larger than phone (also point when grid becomes active) = sm */
 @media (min-width: 550px) {}
 
 /* Larger than tablet = md */
