@@ -1,5 +1,6 @@
-require('./gulp/tasks/styles');
-require('./gulp/tasks/watch');
-require('./gulp/tasks/scripts');
-require('./gulp/tasks/modernizr');
-require('./gulp/tasks/build');
+require('./gulp/styles');
+require('./gulp/scripts');
+require('./gulp/modernizr');
+require('./gulp/fonts');
+require('./gulp/watch');
+require('./gulp/build');

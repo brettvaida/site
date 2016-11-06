@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
-    imagemin = require('gulp-imagemin'),
     del = require('del'),
+    changed = require('gulp-changed'),
+    imagemin = require('gulp-imagemin'),
     usemin = require('gulp-usemin'),
     rev = require('gulp-rev'),
     cssnano = require('gulp-cssnano'),
@@ -36,19 +37,20 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
 
 gulp.task('opitmizeImages', ['deleteDistFolder'], function() {
     return gulp.src('./app/assets/images/**/*')
+    .pipe(changed('./dist/assets/images'))
     .pipe(imagemin({
         progressive: true,
         interlaced: true,
         multipass: true
     }))
-    .pipe(gulp.dest("./dist/assets/images"));
+    .pipe(gulp.dest('./dist/assets/images'));
 });
 
 gulp.task('useminTrigger', ['deleteDistFolder'], function() {
     gulp.start("usemin");
 });
 
-gulp.task('usemin', ['styles', 'scripts'], function() {
+gulp.task('usemin', ['styles', 'scripts', 'fonts'], function() {
     return gulp.src("./app/index.html")
     .pipe(usemin({
         css: [function() {return rev()}, function() {return cssnano()}],
