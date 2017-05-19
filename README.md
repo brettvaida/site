@@ -1,3 +1,8 @@
-# Skeletor
+# Starter Site
 
-A responsive html/css framework.
+A responsive website boilerplate
+
+* Condensed Bootstrap/Skeleton CSS
+* jQuery
+* Font Awesome
+* HTML5Shiv
