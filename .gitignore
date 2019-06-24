@@ -1,8 +1,7 @@
-# Numerous always-ignore extensions
-node_modules/
-dist/
+/node_modules
+/dist
+package-lock.json
 
-# OS or Editor folders
 .DS_Store
 Thumbs.db
 .cache
