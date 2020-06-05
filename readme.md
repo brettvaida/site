@@ -1,8 +1,8 @@
-# Installation
+# Install
 
-`npm i` to install all dependencies then trigger the build and watch scripts respectively
+`npm i` to install all dependencies then trigger the build and watch scripts automatically
 
-# Usage
+# Use
 
 `npm run build` to manually trigger the build script
 
