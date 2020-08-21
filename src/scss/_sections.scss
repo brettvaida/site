@@ -1,0 +1,30 @@
+section {
+  display: grid;
+}
+
+.hero {
+  height: 90vh;
+  min-height: 35rem;
+  background-color: #ddd;
+  text-align: center;
+
+  & > div {
+    margin: auto;
+  }
+}
+
+.content {
+  grid-gap: 5rem;
+  padding: 5rem;
+  background-color: #fff;
+
+  @include for-tablet-landscape-up {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+  }
+}

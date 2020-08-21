@@ -12,17 +12,8 @@ body {
     display: grid;
   }
 
-  main > div,
   footer > div {
     margin: auto;
     text-align: center;
-  }
-
-  main {
-    height: 90vh;
-  }
-
-  footer {
-    height: 10vh;
   }
 }
